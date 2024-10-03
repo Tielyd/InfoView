@@ -3,13 +3,8 @@
     <div class="container text-center mt-3 mb-5">
 
         <!-- Formulário para aplicar filtros aos produtos -->
-        <form name="formFiltro" action="index.php" method="GET" style="width:50%; margin:auto;">
-            <select class="form-select" name="filtroProduto" required>
-                <option value="todos">Relatórios Semanais</option>
-                <option value="disponivel">Disciplinas</option>
-                <option value="vendido">Análises</option>
-                <option value="vendido">Calendário</option>
-            </select><br>
+        <form name="formFiltro" action="sobre.php" method="GET" style="width:50%; margin:auto;">
+           
 
         </form>
 
@@ -22,7 +17,7 @@
                     <div class="card-body">
                         <h4 class="card-title">INFORMÁTICA 1</h4>
                         <p class="card-text">Técnico de Informática para Internet</p>
-                        <a href="#" class="btn btn-danger" style="background-color:#DC143C";>Ver Detalhes</a>
+                        <a href="info1.php" class="btn btn-danger" style="background-color:#DC143C";>Ver Detalhes</a>
                     </div>
                 </div>
             </div>

@@ -1,15 +1,16 @@
 <?php include("header.php"); ?>
-<?php
 
+<?php
+      
 
 // Configurações do curso
-$curso = "Curso de Informática";
+$curso = "Informática para Internet 1";
 $disciplinas = [
-    'Segunda-feira' => ['Programação', 'Matemática'],
-    'Terça-feira' => ['Banco de Dados', 'Redes de Computadores'],
-    'Quarta-feira' => ['Sistemas Operacionais', 'Algoritmos'],
-    'Quinta-feira' => ['Engenharia de Software', 'Teoria da Computação'],
-    'Sexta-feira' => ['Desenvolvimento Web', 'Segurança da Informação']
+    'Segunda-feira' => ['Química 1', 'Biologia 1'],
+    'Terça-feira' => ['Design Gráfico / Tecnologias WEB', 'Design Gráfico / Tecnologias WEB'],
+    'Quarta-feira' => ['Língua Portuguesa 1', 'Educação Física 1'],
+    'Quinta-feira' => ['Matemática 1', 'Arte 1'],
+    'Sexta-feira' => ['Física 1', 'Língua Inglesa 1']
 ];
 
 // Obtém a data atual
@@ -40,7 +41,7 @@ function exibirCalendario($semana, $disciplinas) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Relatório Semanal - <?= $curso ?></title>
-    <link rel="stylesheet" href="style.css"> <!-- Opcional -->
+    <link rel="stylesheet" href="style.css"> 
 </head>
 <body>
     <div class="container">

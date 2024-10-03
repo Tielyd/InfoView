@@ -6,12 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Sobre Nós</title>
         <style>
-            body {
-                font-family: Arial, sans-serif;
-                margin: 0;
-                padding: 20px;
-                background-color: #f4f4f9;
-            }
+           
             .team-member {
                 margin-bottom: 40px;
             }
@@ -35,24 +30,24 @@
             <div class="team-member">
                 <h3>Antoniely- Suplente</h3>
                 <p>Estudante de Informática para Internet - Campus Telêmaco Borba</p>
-                <p>Contribuição: Implementação de APIs e gerenciamento do banco de dados MySQL.</p>
+                <p>Contribuição: Criação de interfaces, Identidade Visual, gerenciamento do banco de dados MySQL e Conteúdo.</p>
             </div>
     
             <div class="team-member">
-                <h3>Ana Souza - Designer UI/UX</h3>
-                <p>Estudante de Design Gráfico com foco em experiência do usuário e interfaces amigáveis.</p>
-                <p>Contribuição: Criação do layout e design das páginas do sistema.</p>
+                <h3>João Pedro Alves Bezerra - Aluno</h3>
+                <p>Estudante de Informática para Internet - Campus Telêmaco Borba</p>
+                <p>Contribuição: Criação de interfaces, Identidade Visual, gerenciamento do banco de dados MySQL e Conteúdo.</p>
             </div>
     
             <div class="team-member">
-                <h3>Carlos Lima - Desenvolvedor Frontend</h3>
-                <p>Estudante de Ciência da Computação, especializado em JavaScript e desenvolvimento de interfaces interativas.</p>
-                <p>Contribuição: Desenvolvimento do frontend usando HTML, CSS, e JavaScript.</p>
+                <h3>Lorena de Oliveira Santos - Aluna</h3>
+                <p>Estudante de Informática para Internet - Campus Telêmaco Borba</p>
+                <p>Contribuição: Criação de interfaces, Identidade Visual, gerenciamento do banco de dados MySQL e Conteúdo.</p>
             </div>
         </section>
     
         <footer>
-            <p>Agradecemos aos nossos professores e colegas que nos ajudaram a alcançar este resultado.</p>
+            <p>Agradecemos aos nossos professores que nos ajudaram a alcançar este resultado.</p>
         </footer>
     </body>
     </html>

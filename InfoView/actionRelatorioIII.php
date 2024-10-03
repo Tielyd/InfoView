@@ -2,11 +2,46 @@
 
 <?php
     // Bloco para declaração de variáveis PHP
-    $bancoDeDados = $filosofia1 = $geografia1 = $gestaoDeWebSites = $historia1 = $linguaEspanhola1 = $linguaPortuguesa3 = $matematica3 = $progWeb1 = $sociologia1 = "";
+    $semana = $mes = $curso = $ano = $bancoDeDados = $filosofia1 = $geografia1 = $gestaoDeWebSites = $historia1 = $linguaEspanhola1 = $linguaPortuguesa3 = $matematica3 = $progWeb1 = $sociologia1 = "";
     $erroPreenchimento = false;
 
     // Verifica o método de requisição do formulário
     if($_SERVER["REQUEST_METHOD"] == "POST"){
+
+        if(empty($_POST["curso"])){
+            echo "<div class='alert alert-warning text-center'>O campo <strong>CURSO</strong> é obrigatório!</div>";
+            $erroPreenchimento = true;
+        } else {
+            $curso = filtrar_entrada($_POST["curso"]);
+        }
+
+        if(empty($_POST["ano"])){
+            echo "<div class='alert alert-warning text-center'>O campo <strong>ANO</strong> é obrigatório!</div>";
+            $erroPreenchimento = true;
+        } else {
+            $ano = filtrar_entrada($_POST["ano"]);
+        }
+
+        if(empty($_POST["semana"])){
+            echo "<div class='alert alert-warning text-center'>O campo <strong>SEMANA</strong> é obrigatório!</div>";
+            $erroPreenchimento = true;
+        } else {
+            $semana = filtrar_entrada($_POST["semana"]);
+        }
+
+        if(empty($_POST["mes"])){
+            echo "<div class='alert alert-warning text-center'>O campo <strong>MÊS</strong> é obrigatório!</div>";
+            $erroPreenchimento = true;
+        } else {
+            $mes = filtrar_entrada($_POST["mes"]);
+        }
+
+        if(empty($_POST["bancoDeDados"])){
+            echo "<div class='alert alert-warning text-center'>O campo <strong>BANCO DE DADOS</strong> é obrigatório!</div>";
+            $erroPreenchimento = true;
+        } else {
+            $bancoDeDados = filtrar_entrada($_POST["bancoDeDados"]);
+        }
 
         // Validação do campo bancoDeDados
         if(empty($_POST["bancoDeDados"])){
@@ -93,7 +128,7 @@
         if(!$erroPreenchimento){
 
             // Armazena a QUERY na variável $inserirUsuario
-            $inserirUsuario = "INSERT INTO relatorioInfo3 (bancoDeDados, filosofia1, geografia1, gestaoDeWebSites, historia1, linguaEspanhola1, linguaPortuguesa3, matematica3, progWeb1, sociologia1) VALUES ('$bancoDeDados', '$filosofia1','$geografia1', '$gestaoDeWebSites', '$historia1','$linguaEspanhola1', '$linguaPortuguesa3', '$matematica3', '$progWeb1', '$sociologia1')";
+            $inserirUsuario = "INSERT INTO relatorioInfo3 (semana, mes, cursoRelatorio, anoRelatorio, bancoDeDados, filosofia1, geografia1, gestaoDeWebSites, historia1, linguaEspanhola1, linguaPortuguesa3, matematica3, progWeb1, sociologia1) VALUES ('$semana', '$mes', '$curso', '$ano','$bancoDeDados', '$filosofia1','$geografia1', '$gestaoDeWebSites', '$historia1','$linguaEspanhola1', '$linguaPortuguesa3', '$matematica3', '$progWeb1', '$sociologia1')";
 
             // Inclui o arquivo de conexão com o banco de dados
             include "conexaoBD.php";
@@ -105,6 +140,14 @@
                     <div class='container mt-3'>
                         <div class='table-responsive'>
                             <table class='table'>
+                                <tr>
+                                    <th>CURSO</th>
+                                    <td>$curso</td>
+                                </tr>
+                                <tr>
+                                    <th>ANO</th>
+                                    <td>$ano</td>
+                                </tr>
                                 <tr>
                                     <th>BANCO DE DADOS</th>
                                     <td>$bancoDeDados</td>

@@ -46,10 +46,13 @@
                         <a class="nav-link active" href="index.php" title="Ir para a Página Inicial">Início</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="formLogin.php" title="Acessar o Sistema">Login</a>
+                        <a class="nav-link active" href="formRelatorioINF3.php" title="Ir para a Página Inicial">Cadastrar Relatório</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="formLogin.php" title="Acessar o Sistema">Sobre Nós</a>
+                        <a class="nav-link active" href="formLogin.php" title="Acessar o Sistema">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="sobre.php" title="Acessar o Sistema">Sobre Nós</a>
                     </li>
 
                 </ul>
