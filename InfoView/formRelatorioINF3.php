@@ -78,7 +78,24 @@
                         <div class="valid-feedback"></div>
                         <div class="invalid-feedback"></div>
                     </div>
+                
                 </div>
+                <div class="col-sm-12">
+                    <div class="form-floating mb-3 mt-3">
+                        <select class="form-select" id="dia" name="dia" required>
+                            <option value="" disabled selected>Selecione o Dia</option>
+                            <option value="segunda">Segunda-Feira</option>
+                            <option value="terca">Terça-Feira</option>
+                            <option value="quarta">Quarta-Feira</option>
+                            <option value="quinta">Quinta-Feira</option>
+                            <option value="sexta">Sexta-Feira</option>
+                        </select>
+                        <label for="dia" class="form-label">Dia da Semana:</label>
+                        <div class="valid-feedback"></div>
+                        <div class="invalid-feedback"></div>
+                    </div>
+                </div>
+                
             </div>
             <!-- Fim da linha de Semana e Mês -->
 

@@ -2,7 +2,7 @@
 
 <?php
     // Bloco para declaração de variáveis PHP
-    $semana = $mes = $curso = $ano = $bancoDeDados = $filosofia1 = $geografia1 = $gestaoDeWebSites = $historia1 = $linguaEspanhola1 = $linguaPortuguesa3 = $matematica3 = $progWeb1 = $sociologia1 = "";
+    $dia = $semana = $mes = $curso = $ano = $bancoDeDados = $filosofia1 = $geografia1 = $gestaoDeWebSites = $historia1 = $linguaEspanhola1 = $linguaPortuguesa3 = $matematica3 = $progWeb1 = $sociologia1 = "";
     $erroPreenchimento = false;
 
     // Verifica o método de requisição do formulário
@@ -20,6 +20,13 @@
             $erroPreenchimento = true;
         } else {
             $ano = filtrar_entrada($_POST["ano"]);
+        
+        }
+        if(empty($_POST["dia"])){
+            echo "<div class='alert alert-warning text-center'>O campo <strong>DIA</strong> é obrigatório!</div>";
+            $erroPreenchimento = true;
+        } else {
+            $dia = filtrar_entrada($_POST["dia"]);
         }
 
         if(empty($_POST["semana"])){
@@ -35,6 +42,7 @@
         } else {
             $mes = filtrar_entrada($_POST["mes"]);
         }
+        
 
         if(empty($_POST["bancoDeDados"])){
             echo "<div class='alert alert-warning text-center'>O campo <strong>BANCO DE DADOS</strong> é obrigatório!</div>";
@@ -128,7 +136,7 @@
         if(!$erroPreenchimento){
 
             // Armazena a QUERY na variável $inserirUsuario
-            $inserirUsuario = "INSERT INTO relatorioInfo3 (semana, mes, cursoRelatorio, anoRelatorio, bancoDeDados, filosofia1, geografia1, gestaoDeWebSites, historia1, linguaEspanhola1, linguaPortuguesa3, matematica3, progWeb1, sociologia1) VALUES ('$semana', '$mes', '$curso', '$ano','$bancoDeDados', '$filosofia1','$geografia1', '$gestaoDeWebSites', '$historia1','$linguaEspanhola1', '$linguaPortuguesa3', '$matematica3', '$progWeb1', '$sociologia1')";
+            $inserirUsuario = "INSERT INTO relatorioInfo3 (dia, semana, mes, curso, ano, bancoDeDados, filosofia1, geografia1, gestaoDeWebSites, historia1, linguaEspanhola1, linguaPortuguesa3, matematica3, progWeb1, sociologia1) VALUES ('$dia','$semana', '$mes', '$curso', '$ano','$bancoDeDados', '$filosofia1','$geografia1', '$gestaoDeWebSites', '$historia1','$linguaEspanhola1', '$linguaPortuguesa3', '$matematica3', '$progWeb1', '$sociologia1')";
 
             // Inclui o arquivo de conexão com o banco de dados
             include "conexaoBD.php";

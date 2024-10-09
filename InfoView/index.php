@@ -17,7 +17,7 @@
                     <div class="card-body">
                         <h4 class="card-title">INFORMÁTICA 1</h4>
                         <p class="card-text">Técnico de Informática para Internet</p>
-                        <a href="info1.php" class="btn btn-danger" style="background-color:#DC143C";>Ver Detalhes</a>
+                        <a href="#" class="btn btn-danger" style="background-color:#DC143C";>Ver Detalhes</a>
                     </div>
                 </div>
             </div>
@@ -35,7 +35,7 @@
                     <div class="card-body">
                         <h4 class="card-title">INFORMÁTICA 3</h4>
                         <p class="card-text">Técnico de Informática para Internet</p>
-                        <a href="#" class="btn btn-danger" style="background-color:#DC143C";>Ver Detalhes</a>
+                        <a href="info3.php" class="btn btn-danger" style="background-color:#DC143C";>Ver Detalhes</a>
                     </div>
                 </div>
             </div>
